@@ -7,5 +7,8 @@ CFLAGS = -std=c++20 -I/usr/local/include \
 -framework AVFoundation -framework QuartzCore \
 -framework CoreMedia -framework Cocoa -framework QTKit
 
-make:
+nwarn:
 	$(CC) $(FILES) -o $(NAME) $(CFLAGS) -Wall -w
+
+warn:
+	$(CC) $(FILES) -o $(NAME) $(CFLAGS)
